@@ -1,0 +1,11 @@
+Para que esta aplicación funcione correctamente se deben instalar los siguientes paquetes con el gestor de node.js (npm)
+
+* express (para el servidor web)
+* body-parser (para procesas formularios y JSON)
+* onoff (para la raspberry)
+* nunjucks (para renderizar el HTML)
+
+Lo único que debe hacer es conectar un led (con resistencia) en
+en el Gpio-17 y abrir la dirección IP:3000 en el navegador de
+un dispositivo en la misma red de la placa.
+
