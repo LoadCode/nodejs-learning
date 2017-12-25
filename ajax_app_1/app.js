@@ -15,6 +15,7 @@ var get_response = function(){
 
 // Enviar payload
 var send_payload = function(){
+	console.log('send_payload');
 	peticion_http = new XMLHttpRequest();
 	peticion_http.onreadystatechange = get_response;
 	peticion_http.open('GET','/',true);
