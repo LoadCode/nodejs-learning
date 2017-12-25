@@ -1,0 +1,14 @@
+{
+  "name": "app_node_ajax_get",
+  "version": "1.0.0",
+  "description": "Aplicación simple que comunica a node y ajax",
+  "main": "nodeapp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Julio César Echeverri Marulanda (@Spartan_Coder)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
