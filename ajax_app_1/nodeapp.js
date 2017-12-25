@@ -5,11 +5,11 @@ var i = 1;
 app.use(express.static('.'));
 
 var manejador = function(req, res){
-	res.send('Contador Server: ' + i);
+	res.send("Contador: " + i);
 	i++;
 };
 
-app.get('/', manejador);
+app.get('/responder_ajax', manejador);
 
 app.listen(3000);
 

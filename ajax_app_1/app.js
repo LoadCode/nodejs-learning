@@ -11,6 +11,7 @@ window.onload = function(){
 var get_response = function(){
 	var divTexto = document.getElementById('respuesta');
 	divTexto.innerHTML = peticion_http.responseText;
+	console.log(peticion_http.responseText);
 }
 
 // Enviar payload
@@ -18,7 +19,7 @@ var send_payload = function(){
 	console.log('send_payload');
 	peticion_http = new XMLHttpRequest();
 	peticion_http.onreadystatechange = get_response;
-	peticion_http.open('GET','/',true);
+	peticion_http.open('get','/responder_ajax',true);
 	peticion_http.send();
 }
 
