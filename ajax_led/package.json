@@ -1,0 +1,20 @@
+{
+  "name": "ajax_led",
+  "version": "1.0.0",
+  "description": "Control de un led utilizando AJAX y Nodejs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "led",
+    "ajax",
+    "node"
+  ],
+  "author": "Julio César Echeverri Marulanda (@Spartan_Coder)",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2",
+    "onoff": "^1.1.9"
+  }
+}
