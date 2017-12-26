@@ -1,5 +1,6 @@
 var express = require('express');
 var Gpio    = require('onoff').Gpio;
+var bodyParser = require('body-parser');
 
 var app = express();
 var led = new Gpio(17, 'out');
@@ -7,6 +8,8 @@ var PATH_TO_TEMPLATES = '.';
 
 // Usar el middleware para server los archivos estáticos
 app.use(express.static(PATH_TO_TEMPLATES));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended:true}));
 
 var control = function(req, res){
 	var state = req.body.state;

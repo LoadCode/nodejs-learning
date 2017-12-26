@@ -14,6 +14,7 @@
   "author": "Julio César Echeverri Marulanda (@Spartan_Coder)",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "onoff": "^1.1.9"
   }

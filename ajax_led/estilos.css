@@ -22,6 +22,7 @@
 	color: #FFF;
 	font-family: Ubuntu;
 	font-size: xx-large;
+	user-select: none;
 	text-align: center;
 	box-sizing: border-box;
 }
