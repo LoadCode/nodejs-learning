@@ -5,7 +5,7 @@ var enviar_request = function(e){
 	xhr.open('post','/control', true);
 	console.log('Fuente: ' + this.id);
 	if(this.id == 'encender')
-		xhr.send({"state":'ON'});
+		xhr.send(JSON.stringnify({"state":'ON'}));
 	else
 		xhr.send({"state":'OFF'});
 };
